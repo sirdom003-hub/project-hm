@@ -1,53 +1,51 @@
 @charset "UTF-8";
 
 body {
-  margin: 0;
-  height: 100vh;
+  background-image: url(imagens-hm/dune-background-06.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  ;
 
-  background:
-    /* textura de areia (noise leve) */
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E"),
+}
 
-    /* dunas (formas suaves) */
-    radial-gradient(ellipse at 20% 80%, #C6905B 0%, transparent 60%),
-    radial-gradient(ellipse at 70% 85%, #B07A4A 0%, transparent 55%),
-    radial-gradient(ellipse at 50% 95%, #8E5F38 0%, transparent 50%),
-
-    /* céu + base */
-    linear-gradient(to top, #E6B889 40%, #9EC4F0 75%, #4F7FB3 100%);
-
-  background-blend-mode: overlay, normal, normal, normal, normal;
-    background-repeat: no-repeat;
+.menu {
+  max-width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  text-align: left;
+  margin-top: 0%;
+  box-shadow: #000000 0px 0px 10px;
+  border-radius: 10px;
 }
 
 ul.menu {
-  list-style-type: none;
-  text-decoration: none;
-  background-color: rgb(255, 255, 255);
-  box-shadow: #000000 0px 0px 10px;
-  max-width: 111111px;
-  margin-top: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-
+  color: #ff0000;
 }
 
 ul.menu li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 1%;
+}
+
+ul.menu li :hover {
+  color: #ff0000;
+  text-decoration: underline;
+
+  
 }
 
 a {
   text-decoration:none;
   font-size: larger;
+  color: #000000;
 }
-
-
 
 h1 {
   font-family: 'Arial', sans-serif;
-  font-size: 3em;
-  color: #f1f3e2;
+  font-size: 4em;
+  color: #ff0000;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.664);
   text-align: center;
   margin-top: 50px;
@@ -61,17 +59,29 @@ div.main {
   margin-top: 3%;
   margin-left: auto;
   margin-right: auto;
-  width: 1000px;
+  max-width: 75%;
   border-radius: 1em;
   padding: 3%;
 }
 
 
-div.main h2 {
+div.main h1 {
 
-  margin-bottom: -10px;
-  margin-left: 240px;
-  margin-right: 300px;
+  margin-bottom: 0%;
+  margin-left: center;
+  margin-right: center;
+  font-family: 'Georgia', serif;
+  font-size: 2em;
+  font-weight: 400;
+  color: #141414;
+  
+}
+
+div.main h2 {
+  max-width: 100%;
+  margin-bottom: 0%;
+  margin-left: center;
+  margin-right: center;
   font-family: 'Georgia', serif;
   font-size: 2em;
   font-weight: 400;
@@ -81,17 +91,17 @@ div.main h2 {
 
 div#main p {
   margin-bottom: auto;
-  width: 700px;
-  margin-left: 50px;
-  float: left;
+  max-width: 100%;
+  margin-left: center;
+  margin-right: center;
   text-align: justify;
   font-family: 'Georgia', serif;
   font-size: 1.2em;
   font-weight: 400;
-  color: #141414;
   padding: 15px;
   border-radius: 10px;
-  background-color: rgba(222, 221, 221, 0.418);
+  font-style: normal;
+  font-weight: 400;
 }
  
 .container {
@@ -107,21 +117,29 @@ figure {
   font-family: 'Georgia', serif;
   font-size: 1.8em;
   text-indent: 0;
-  border: thin silver solid;
 }
 figure img {
-  width: 70%;
+  max-width: 70%;
   height: auto;
   border-radius: 10px;
 }
 
-footer {
-  background-attachment: fixed;
-  margin-top: 8%;
+figure figcaption {
   text-align: center;
-  padding: 20px;
+  margin-top: 1%;
+  font-size: 1em;
+  color: #141414;
+}
+
+footer {
+  margin-top: 5%;
+  margin-bottom: 0px;
+  height: 5%;
+  text-align: center;
+  padding: 0.4%;
   font-size: 1.2em;
-  background-color: rgb(255, 255, 255);
-  width: 100%;
+  background-color: rgb(255, 255, 255, 0.8);
+  max-width: 100%;
   box-shadow: #000000 0px 0px 10px;
+  border-radius: 10px;
 }
