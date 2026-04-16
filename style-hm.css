@@ -1,14 +1,26 @@
 @charset "UTF-8";
 
-body {
-  background-image: url(imagens-hm/dune-background-06.png);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  ;
 
-}
+  body {
+  margin: 0%;
+  height: 100vh;
+
+  background:
+    /* textura de areia (noise leve) */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E"),
+
+    /* dunas (formas suaves) */
+    radial-gradient(ellipse at 20% 80%, #C6905B 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 85%, #B07A4A 0%, transparent 55%),
+    radial-gradient(ellipse at 50% 95%, #8E5F38 0%, transparent 50%),
+
+    /* céu + base */
+    linear-gradient(to top, #E6B889 40%, #9EC4F0 75%, #4F7FB3 100%);
+
+  background-blend-mode: overlay, normal, normal, normal, normal;
+    background-repeat: no-repeat;
+
+  }
 
 .menu {
   max-width: 100%;
@@ -17,11 +29,12 @@ body {
   text-align: left;
   margin-top: 0%;
   box-shadow: #000000 0px 0px 10px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 ul.menu {
   color: #ff0000;
+  font-size: small;
 }
 
 ul.menu li {
@@ -31,9 +44,6 @@ ul.menu li {
 
 ul.menu li :hover {
   color: #ff0000;
-  text-decoration: underline;
-
-  
 }
 
 a {
@@ -85,11 +95,12 @@ div.main h2 {
   font-family: 'Georgia', serif;
   font-size: 2em;
   font-weight: 400;
-  color: #141414;
+  color: #242121;
   
 }
 
 div#main p {
+  color: #ffffff;
   margin-bottom: auto;
   max-width: 100%;
   margin-left: center;
@@ -103,16 +114,13 @@ div#main p {
   font-style: normal;
   font-weight: 400;
 }
- 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+
+.main p {
+  color: #272626;
 }
 
 figure {
-  margin-top: 200px;
+  margin-top: 5%;
   text-align: center;
   font-family: 'Georgia', serif;
   font-size: 1.8em;
@@ -125,21 +133,25 @@ figure img {
 }
 
 figure figcaption {
+  
   text-align: center;
   margin-top: 1%;
+  margin-bottom: 1%;
   font-size: 1em;
   color: #141414;
 }
 
 footer {
   margin-top: 5%;
-  margin-bottom: 0px;
-  height: 5%;
-  text-align: center;
   padding: 0.4%;
   font-size: 1.2em;
   background-color: rgb(255, 255, 255, 0.8);
+  height: -20%;
   max-width: 100%;
   box-shadow: #000000 0px 0px 10px;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+
+footer p {
+  text-align: center;
 }
