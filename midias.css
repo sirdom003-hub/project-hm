@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+img#tokyo {
+    max-width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    border-radius: 10px;
+}
+
+figcaption#tokyo {
+    color: white;
+    text-align: center;
+    font-size: 110%;
+
+}
+
+a#tokyo {
+    color: #008ed6;
+    text-decoration: underline;
+}
+
+figure {
+    max-width: 70%;
+    margin-top: 20%;
+}
+
+img#densidade {
+    max-width: 55%;
+    
+}
+
+img#mapa {
+    margin-top: 10%;
+}
+
+figcaption {
+    color: black;
+}
+
+figcaption#densidade {
+    font-size: 165%;
+    margin-left: -20%;
+    max-width: 100%;
+}
+
+figcaption#mapa {
+    margin-top: 0%;
+    margin-left: -30%;
+    font-size: 1.2em;
+}
