@@ -7,30 +7,41 @@
     <title>Artigos</title>
     <style>
 
+        .but {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10%;
+            margin-bottom: 25%;
+        }
+
         button {
+            color: white;
             border-radius: 5px;
-            background-color: rgb(255, 255, 255);
-            border: none;
-            
+            background-color: transparent;
+            border: white solid 2px;
+            max-width: 100%; 
+            font-size: x-large;
         }
 
         button:hover {
-            color: red;
-
+           background-color: rgba(255, 255, 255, 0.329);
         }
 
         input {
-            border: none;
-
+            border-radius: 5px;
+            border: white solid 2px;
+            background-color: transparent;
+            color: white;
+            font-size: x-large;
         }
 
         input:hover {
-            background-color: rgb(200, 200, 200);
-
+           background-color: rgba(255, 255, 255, 0.329);
         }
 
         ::placeholder {
-            color:black
+            color:rgb(255, 255, 255)
         }
 
 
@@ -41,28 +52,30 @@
          
     <section id="menu">
           <ul class="menu">
-             <li><a href="index-hm.html">home  </a></li>
-             <li><a href="buscas.html">Buscas</a></li>
+             <li><a href="index-hm.html">Home  </a></li>
+             <li><a href="buscas.html">Explorar</a></li>
              <li><a href="atlas.html">Atlas</a></li>
-             <li><a href="fotos-e-videos.html">fotos e videos</a></li>
-             <li><a href="contato.html">contato</a></li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; não acredito que exista mais humanidade em nos humanos.
+             <li><a href="fotos-e-videos.html">Histórias</a></li>
+             <li><a href="contato.html">contato</a></li>
           </ul>
     </section>
 
-<h1>Artigos :)</h1>
+<p id="ppj">UM PROJETO SOBRE O QUE RESTOU</p>
 
+<h1>Artigos<span> :)</span></h1>
 
- <div class="main">
+    <div class="but">
+        <div id="main">
 
-    <search>
-        <form action="/pesquisar" method="get" id="search-form">
-            <input type="search" id="q" name="q" placeholder="Digite sua busca aqui">
-            <button type="submit">Buscar</button>
-        </form>
-    </search>
+             <search>
+                <form action="/pesquisar" method="get"      id="search-form">
+                    <input type="search" id="q" name="q" placeholder="Digite sua busca aqui">
+                      <button type="submit">Buscar</button>
+                </form>
+             </search>
 
- </div>
-
+        </div>
+    </div>
      <footer>
         
         <p>Copyright &copy; 2026 - Todos os direitos reservados</p>
